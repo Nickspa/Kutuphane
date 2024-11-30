@@ -1,0 +1,70 @@
+Proje Raporu: Kütüphane Yönetim Sistemi
+1. Proje Amacý
+Bu proje, bir kütüphanedeki kitaplarýn yönetimi, kiralanmasý ve iade
+edilmesi gibi iþlemleri kolaylaþtýran bir yazýlým uygulamasý geliþtirmeyi
+amaçlamaktadýr. Kullanýcýlar, kitaplarý arayabilir, ekleyebilir,
+kiralayabilir ve iade edebilirler. Ayrýca, sistemdeki kitaplarýn
+durumlarý hakkýnda raporlar alýnabilir.
+2. Kullanýlan Teknolojiler
+Programlama Dili: C#
+Veri Yapýlarý: Listeler (List<Book>, List<Rental>)
+Temel Fonksiyonlar:
+Kitap ekleme
+Kitap kiralama
+Kitap iade etme
+Kitap arama
+Raporlama
+3. Sistem Fonksiyonlarý
+3.1. Kitap Ekleme
+Kütüphane yöneticisi veya kullanýcý, yeni kitaplar ekleyebilir. Kitap
+adý, yazar adý, yayýn yýlý ve stok miktarý girildikten sonra kitaplar
+kaydedilir. Mevcut bir kitap eklenirse, stok miktarý artýrýlýr.
+3.2. Kitap Kiralama
+Kullanýcýlar mevcut kitaplardan birini kiralayabilir. Kiralama süresi
+maksimum 14 gündür ve günlük kiralama ücreti 5 TL olarak belirlenmiþtir.
+Kullanýcý, bütçesini belirtmeli ve yeterli parasý varsa, kitap
+kiralanabilir.
+3.3. Kitap Ýade Etme
+Kiralanan kitaplar iade edilebilir. Kullanýcý, hangi kitabý iade etmek
+istediðini seçer ve sistem, stok miktarýný günceller.
+3.4. Kitap Arama
+Kitaplar, kitap adý veya yazar adý ile arama yapýlabilir. Arama
+sonuçlarý, arama kriterine göre filtrelenerek kullanýcýya sunulur.
+3.5. Raporlama
+Raporlama menüsü, iki ana seçenek sunar:
+Tüm kitaplar: Kitaplarýn baþlýklarý, yazarlarý ve mevcut stok durumlarý
+görüntülenir.
+Kirada olan kitaplar: Hangi kitaplarýn kiralandýðý ve hangi tarihte iade
+edileceði bilgisi raporlanýr.
+3.6. Yardým Menüsü
+Yardým menüsü, kullanýcýya sistemin nasýl çalýþtýðýný, her bir
+fonksiyonun ne iþe yaradýðýný açýklar.
+4. Sistem Akýþý
+Uygulama, bir ana menü üzerinden çalýþýr. Menüde kullanýcýya çeþitli
+seçenekler sunulur:
+Kitap eklemek, kiralamak, iade etmek, arama yapmak ve raporlama gibi
+iþlemler gerçekleþtirilir.
+Kullanýcý, istediði iþlemden sonra ana menüye dönerek baþka bir iþlem
+yapabilir.
+Sistem, kullanýcýyý yönlendirmek için mesajlar ve hata bildirimleri
+görüntüler.
+5. Veri Yapýlarý
+Proje, kitaplar ve kiralamalar için iki ana liste kullanýr:
+List<Book>: Kitaplarýn bilgilerini (baþlýk, yazar, yýl, stok) içerir.
+List<Rental>: Kiralanan kitaplarýn bilgilerini (kullanýcý adý, kiralanan
+kitap, kiralama tarihi, iade tarihi) içerir.
+6. Hata Yönetimi
+Sistem, kullanýcýnýn yanlýþ bir seçim yapmasý durumunda hata mesajlarý
+gösterir ve doðru giriþ yapýlmasý için kullanýcýyý uyarýr. Örneðin,
+geçersiz bir kitap numarasý veya kiralama süresi girildiðinde, uygun hata
+mesajlarýyla iþlem durdurulur.
+7. Kullanýcý Deneyimi
+Kullanýcý dostu bir arayüz ve anlaþýlýr bir menü yapýsý, kullanýcýlarýn
+hýzlýca iþlem yapabilmesini saðlar. Yardým menüsü, kullanýcýya her adýmda
+rehberlik eder.
+8. Sonuç
+Bu kütüphane yönetim sistemi, kitaplarýn etkin bir þekilde yönetilmesi,
+kiralanmasý ve iade edilmesi için kapsamlý bir çözüm sunmaktadýr.
+Kullanýcýlar, basit ve anlaþýlýr bir arayüzle iþlemlerini
+gerçekleþtirebilir, kütüphane yönetimindeki tüm süreçleri verimli bir
+þekilde takip edebilirler.
